@@ -20,6 +20,7 @@ namespace BookListRazor
         // 2. Create a model to hold the return from the user
         //    Use a property binding book so the OnPost does need a book object passed to it.
         //    The binding fills the Book object from the put request data.
+        //    Use BindProperty instead of public async Task<IActionResult> OnPost(Book bookObj)
         [BindProperty]
         public Book Book { get; set; }
 
@@ -55,7 +56,9 @@ namespace BookListRazor
                 return RedirectToPage("Index");
             }
             else {
-                return Page();  // If the object is not correct from the input return to the page
+                // If the object is not correct from the input return to the page
+                // IsValid input must match all the data model rules
+                return Page();
             }
 
         }

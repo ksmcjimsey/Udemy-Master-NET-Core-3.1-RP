@@ -8319,25 +8319,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\A17223\\.nuget\\packages\\": {},
+    "C:\\Users\\ksmcj\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A17223\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\BookListRazor.csproj",
+      "projectUniqueName": "D:\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\BookListRazor.csproj",
       "projectName": "BookListRazor",
-      "projectPath": "C:\\Users\\A17223\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\BookListRazor.csproj",
-      "packagesPath": "C:\\Users\\A17223\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A17223\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\obj\\",
+      "projectPath": "D:\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\BookListRazor.csproj",
+      "packagesPath": "C:\\Users\\ksmcj\\.nuget\\packages\\",
+      "outputPath": "D:\\OneDrive - Johns Hopkins University\\4. CHP Studies\\Udemy\\2. Master ASP.Net Core 3.1 Razor Pages\\My Projects\\BLRP\\BookListRazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\A17223\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ksmcj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8407,7 +8407,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

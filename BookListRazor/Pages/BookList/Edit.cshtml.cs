@@ -10,24 +10,38 @@ namespace BookListRazor
 {
     public class EditModel : PageModel
     {
+        // Step 1: almost every controller needs to have at least 
+        //         one database context 
         private ApplicationDbContext _db;
 
+
+        // Step 2: Almost always created at least one object
+        //         model to hold the return values from the
+        //         database or user form.
         [BindProperty]
         public Book EditBook { get; set; }
 
+
+        // Step 3: Almost always need to assign the database
+        //         contexts to the local model object(s)
         public EditModel(ApplicationDbContext db)
         {
             _db = db;
         }
 
 
-        // Get will get the ID and load the data into the form
+        // Step 4: Often need a default page or a page with config 
+        //         arguments sent in get request.
+        //         Get will get the ID and load the data into the form
+        //         URL: url/Edit?id={some ID Number}
         public async Task OnGet(int id)
         {
             // go to database and find the book with an id of id.
             EditBook = await _db.Book.FindAsync(id);
         }
 
+        // Step 5: often need a post request to add user provided
+        //         form data to the DB or program action.
         // Put will update the values in the DB.
         // When we redirect to a new page after handleing the form post
         // return we need to give Task a tyep of IActionResult

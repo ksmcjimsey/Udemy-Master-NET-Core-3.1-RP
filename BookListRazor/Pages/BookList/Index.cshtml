@@ -29,7 +29,7 @@
                     @* This is the table header *@
                     <tr class="table-secondary">
                         <th>
-                            @* lable type, get the first book and grap the name of the column. *@
+                            @* Label type, get the first book and grap the name of the column. *@
                             <label asp-for="Books.FirstOrDefault().Name"></label>
                         </th>
                         <th>
@@ -74,7 +74,8 @@
                                 </button>
 
                                 @* Passing the ID of the line back to the controller
-                                    We are in loop with item variable.  We us amp symbole to use C# with the object name and getter. *@
+                                    We are in loop with item variable.  We us amp symbole to use C# with 
+                                    the object name and getter.  Should be url/Edit?id={some id number} *@
                                 <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
                             </td>
                         </tr>
@@ -137,7 +138,7 @@
 </div>
 
 @* How we add scripts into a page Loading the table using JS. *@
-@section Scripts{ 
+@section Scripts{
     <script src="~/js/bookList.js"></script>
 }
 

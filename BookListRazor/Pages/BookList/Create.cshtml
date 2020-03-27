@@ -10,11 +10,15 @@
 
     <form method="post">
 
-        @* Add an error message if input does not match the model
-           Controller level validation *@
+        @* *** ERROR MESSAGE *** 
+           Add an error message if input does not match the model
+           Controller level validation asp-validation-summary is a special
+           error handling for asp core. *@
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
-        @* One row for each one, two, or three label entry pairs*@
+        @* *** FORM INPUTS ***
+
+           One row for each one, two, or three label entry pairs*@
         <div class="form-group row">
 
             @* Label entry pair *@
@@ -78,7 +82,10 @@
 
 </div>
 
-@* Front end validation *@
+@* Front end validation - We should check the model both front end and
+   using isValid in the Post method.  This is front end and controller level.
+   might want futher front end validation with JS/HTML and further logic
+   in the controller for back end checking as well. *@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
